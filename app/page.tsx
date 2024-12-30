@@ -3,7 +3,6 @@ import { HomeIcon, Book, Camera, Notebook } from "lucide-react";
 import { TextLoop } from "@/components/ui/text-loop";
 import { GithubIcon } from "@/components/ui/github";
 import { LinkedinIcon } from "@/components/ui/linkedin";
-import { InstagramIcon } from "@/components/ui/instagram";
 import { XIcon } from "@/components/ui/x";
 import { PinterestIcon } from "@/components/ui/pinterest";
 import { AtSignIcon } from "@/components/ui/at-sign";
