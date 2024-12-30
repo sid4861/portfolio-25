@@ -3,7 +3,7 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import { useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { images } from "@/images.const";
 
 interface ImageItemProps {
@@ -13,6 +13,7 @@ interface ImageItemProps {
 function ImageItem({ image }: ImageItemProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const [isLoaded, setIsLoaded] = useState(false);
 
   return (
     <motion.div
@@ -20,16 +21,28 @@ function ImageItem({ image }: ImageItemProps) {
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative aspect-square w-full overflow-hidden rounded-lg"
+      className="relative aspect-square w-full overflow-hidden rounded-lg bg-[#dedede]"
     >
       {isInView && (
-        <Image
-          src={image}
-          alt={image}
-          fill
-          className="object-cover"
-          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-        />
+        <>
+          {/* Placeholder div while image loads */}
+          <div
+            className={`absolute inset-0 bg-[#dedede] transition-opacity duration-300 ${
+              isLoaded ? "opacity-0" : "opacity-100"
+            }`}
+          />
+          <Image
+            src={image}
+            alt={image}
+            fill
+            className={`object-cover transition-opacity duration-300 ${
+              isLoaded ? "opacity-100" : "opacity-0"
+            }`}
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+            onLoadingComplete={() => setIsLoaded(true)}
+            priority={false}
+          />
+        </>
       )}
     </motion.div>
   );
