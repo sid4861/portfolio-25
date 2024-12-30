@@ -136,7 +136,7 @@ export default function Home() {
               <PinterestIcon />
             </div>
           </a>
-          <a href="https://pin.it/4GX4aPDbj" target="_blank">
+          <a href="mailto:siddharthlodha42@gmail.com" target="_blank">
             <div className="w-10 h-10 bg-[#DBDBDB] border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded hover:bg-[#E3E3E3]">
               <AtSignIcon />
             </div>
@@ -152,10 +152,18 @@ export default function Home() {
             solutions.
           </p>
           <p className={` mt-6 text-[#111827] leading-[1.6]`}>
-            Outside of work, I’m passionate about working out, traveling,
-            photography and reading , currently diving into learning about LLMs,
-            AI agents, and Python. I also strive to try new experiences—view my
-            bucket list here. Tools that I use.
+            Outside of work, I’m like working out, traveling, photography and
+            reading , currently diving into learning about LLMs, AI agents, and
+            Python.Tools that I use.
+          </p>
+          <p className="mt-6">
+            Get in touch at{" "}
+            <span
+              className={`${serif.className} text-[20px] text-stone-800`}
+              style={{ fontStyle: "italic" }}
+            >
+              siddharthlodha42@gmail.com
+            </span>
           </p>
         </section>
 
