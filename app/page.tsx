@@ -10,6 +10,7 @@ import { PinterestIcon } from "@/components/ui/pinterest";
 import { AtSignIcon } from "@/components/ui/at-sign";
 import ProjectCard from "@/components/project-card";
 
+//
 const serif = Instrument_Serif({ weight: ["400"], subsets: ["latin"] });
 const inter = Inter({ weight: ["400", "500", "600"], subsets: ["latin"] });
 
