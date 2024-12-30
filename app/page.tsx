@@ -1,7 +1,6 @@
-import { TextLoop } from "@/components/ui/text-loop";
 import { Instrument_Serif, Inter } from "next/font/google";
 import { HomeIcon, Book, Camera, Notebook } from "lucide-react";
-import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
+import { TextLoop } from "@/components/ui/text-loop";
 import { GithubIcon } from "@/components/ui/github";
 import { LinkedinIcon } from "@/components/ui/linkedin";
 import { InstagramIcon } from "@/components/ui/instagram";
@@ -9,6 +8,8 @@ import { XIcon } from "@/components/ui/x";
 import { PinterestIcon } from "@/components/ui/pinterest";
 import { AtSignIcon } from "@/components/ui/at-sign";
 import ProjectCard from "@/components/project-card";
+import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
+import Link from "next/link";
 
 //
 const serif = Instrument_Serif({ weight: ["400"], subsets: ["latin"] });
@@ -41,7 +42,7 @@ const data = [
     icon: (
       <Camera className="h-full w-full text-neutral-600 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "/gallery",
   },
 ];
 
@@ -203,13 +204,12 @@ export default function Home() {
       <div className="fixed bottom-2 left-1/2 max-w-full -translate-x-1/2">
         <Dock className="items-end pb-3 bg-[#D9D9D9] border border-[#BABABA]">
           {data.map((item, idx) => (
-            <DockItem
-              key={idx}
-              className="aspect-square rounded-full bg-[#d1d1d1] border border-[#BABABA]"
-            >
-              <DockLabel>{item.title}</DockLabel>
-              <DockIcon>{item.icon}</DockIcon>
-            </DockItem>
+            <Link href={item.href} key={idx}>
+              <DockItem className="aspect-square rounded-full bg-[#d1d1d1] border border-[#BABABA]">
+                <DockLabel>{item.title}</DockLabel>
+                <DockIcon>{item.icon}</DockIcon>
+              </DockItem>
+            </Link>
           ))}
         </Dock>
       </div>

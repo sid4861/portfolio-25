@@ -1,11 +1,11 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Instrument_Serif } from "next/font/google";
 import { Spotlight } from "./ui/spotlight";
+import { Card, CardContent } from "./ui/card";
 
 const serif = Instrument_Serif({ weight: ["400"], subsets: ["latin"] });
 
