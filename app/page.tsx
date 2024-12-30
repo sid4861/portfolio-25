@@ -121,11 +121,11 @@ export default function Home() {
               <LinkedinIcon />
             </div>
           </a>
-          <a href="https://www.instagram.com/sid4861/" target="_blank">
+          {/* <a href="https://www.instagram.com/sid4861/" target="_blank">
             <div className="w-10 h-10 bg-[#DBDBDB] border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded hover:bg-[#E3E3E3]">
               <InstagramIcon />
             </div>
-          </a>
+          </a> */}
           <a href="https://x.com/Siddharth0X" target="_blank">
             <div className="w-10 h-10 bg-[#DBDBDB] border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded hover:bg-[#E3E3E3]">
               <XIcon />
