@@ -57,8 +57,7 @@ export default function Home() {
               color: "transparent",
             }}
           >
-            {/* // @ts-expect-error expect error */}
-            I'm
+            I&apos;m
           </span>{" "}
           <span className="text-[#626262]" style={{ fontStyle: "italic" }}>
             Siddharth
