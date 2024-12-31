@@ -10,7 +10,6 @@ import ProjectCard from "@/components/project-card";
 import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
 import Link from "next/link";
 
-//
 const serif = Instrument_Serif({ weight: ["400"], subsets: ["latin"] });
 const inter = Inter({ weight: ["400", "500", "600"], subsets: ["latin"] });
 
@@ -20,7 +19,7 @@ const data = [
     icon: (
       <HomeIcon className="h-full w-full text-neutral-600 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "/",
   },
   {
     title: "Blog",
@@ -153,7 +152,10 @@ export default function Home() {
           <p className={` mt-6 text-[#111827] leading-[1.6]`}>
             Outside of work, I’m like working out, traveling, photography and
             reading , currently diving into learning about LLMs, AI agents, and
-            Python.Tools that I use.
+            Python.
+          </p>
+          <p className={` mt-6 text-[#111827] leading-[1.6] underline`}>
+            <Link href="/tools">Tools that I use.</Link>
           </p>
           <p className="mt-6">
             Get in touch at{" "}
