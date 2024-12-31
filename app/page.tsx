@@ -150,9 +150,12 @@ export default function Home() {
             solutions.
           </p>
           <p className={` mt-6 text-[#111827] leading-[1.6]`}>
-            Outside of work, I’m like working out, traveling, photography and
-            reading , currently diving into learning about LLMs, AI agents, and
-            Python.
+            Outside of work, I’m like working out, traveling,{" "}
+            <Link href={"/gallery"} className="underline">
+              photography
+            </Link>{" "}
+            and reading , currently diving into learning about LLMs, AI agents,
+            and Python.
           </p>
           <p className={` mt-6 text-[#111827] leading-[1.6] underline`}>
             <Link href="/tools">Tools that I use.</Link>
