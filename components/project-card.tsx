@@ -43,9 +43,9 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Link href={href} target="_blank">
-      <Card className="group relative  p-[1px] w-full max-w-[400px] md:max-w-[700px] bg-[#dedede] border-none rounded-xl overflow-hidden transition-shadow hover:shadow-lg">
+      <Card className="group relative  p-[1px] w-full max-w-[400px] md:max-w-[700px] bg-white border-none rounded-xl overflow-hidden transition-shadow hover:shadow-lg">
         <Spotlight
-          className="from-stone-200 via-stone-300 to-stone-400 blur-3xl"
+          className="from-gray-200 via-gray-300 to-gray-400 blur-3xl"
           size={120}
         />
         <div className="relative h-full w-full"></div>

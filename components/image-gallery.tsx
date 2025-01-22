@@ -21,13 +21,13 @@ function ImageItem({ image }: ImageItemProps) {
       initial={{ opacity: 0 }}
       animate={isInView ? { opacity: 1 } : { opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative aspect-square w-full overflow-hidden rounded-lg bg-[#dedede]"
+      className="relative aspect-square w-full overflow-hidden rounded-lg bg-gray-200"
     >
       {isInView && (
         <>
           {/* Placeholder div while image loads */}
           <div
-            className={`absolute inset-0 bg-[#dedede] transition-opacity duration-300 ${
+            className={`absolute inset-0 bg-gray-200 transition-opacity duration-300 ${
               isLoaded ? "opacity-0" : "opacity-100"
             }`}
           />

@@ -1,5 +1,4 @@
 import { Instrument_Serif, Inter } from "next/font/google";
-import { HomeIcon, Book, Camera, Notebook } from "lucide-react";
 import { TextLoop } from "@/components/ui/text-loop";
 import { GithubIcon } from "@/components/ui/github";
 import { LinkedinIcon } from "@/components/ui/linkedin";
@@ -7,42 +6,10 @@ import { XIcon } from "@/components/ui/x";
 import { PinterestIcon } from "@/components/ui/pinterest";
 import { AtSignIcon } from "@/components/ui/at-sign";
 import ProjectCard from "@/components/project-card";
-import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
 import Link from "next/link";
 
 const serif = Instrument_Serif({ weight: ["400"], subsets: ["latin"] });
 const inter = Inter({ weight: ["400", "500", "600"], subsets: ["latin"] });
-
-const data = [
-  {
-    title: "Home",
-    icon: (
-      <HomeIcon className="h-full w-full text-neutral-600 dark:text-neutral-300" />
-    ),
-    href: "/",
-  },
-  {
-    title: "Blog",
-    icon: (
-      <Notebook className="h-full w-full text-neutral-600 dark:text-neutral-300" />
-    ),
-    href: "#",
-  },
-  {
-    title: "Books",
-    icon: (
-      <Book className="h-full w-full text-neutral-600 dark:text-neutral-300" />
-    ),
-    href: "#",
-  },
-  {
-    title: "Photos",
-    icon: (
-      <Camera className="h-full w-full text-neutral-600 dark:text-neutral-300" />
-    ),
-    href: "/gallery",
-  },
-];
 
 export default function Home() {
   return (
@@ -107,7 +74,7 @@ export default function Home() {
         {/* social icons */}
         <section className="flex gap-2 mt-6">
           <a href="https://github.com/sid4861" target="_blank">
-            <div className="w-10 h-10 bg-[#DBDBDB] border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded hover:bg-[#E3E3E3]">
+            <div className="w-10 h-10 bg-white border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded ">
               <GithubIcon />
             </div>
           </a>
@@ -115,7 +82,7 @@ export default function Home() {
             href="https://www.linkedin.com/in/siddharth-lodha-693418105/"
             target="_blank"
           >
-            <div className="w-10 h-10 bg-[#DBDBDB] border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded hover:bg-[#E3E3E3]">
+            <div className="w-10 h-10 bg-white border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded ">
               <LinkedinIcon />
             </div>
           </a>
@@ -125,17 +92,17 @@ export default function Home() {
             </div>
           </a> */}
           <a href="https://x.com/Siddharth0X" target="_blank">
-            <div className="w-10 h-10 bg-[#DBDBDB] border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded hover:bg-[#E3E3E3]">
+            <div className="w-10 h-10 bg-white border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded">
               <XIcon />
             </div>
           </a>
           <a href="https://pin.it/4GX4aPDbj" target="_blank">
-            <div className="w-10 h-10 bg-[#DBDBDB] border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded hover:bg-[#E3E3E3]">
+            <div className="w-10 h-10 bg-white border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded">
               <PinterestIcon />
             </div>
           </a>
           <a href="mailto:siddharthlodha42@gmail.com" target="_blank">
-            <div className="w-10 h-10 bg-[#DBDBDB] border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded hover:bg-[#E3E3E3]">
+            <div className="w-10 h-10 bg-white border border-[#BABABA] shadow-[0px_0px_1px_rgba(145,145,145,0.1),-1px_1px_2px_rgba(145,145,145,0.09),-2px_3px_2px_rgba(145,145,145,0.05),-4px_5px_2px_rgba(145,145,145,0.01)] rounded">
               <AtSignIcon />
             </div>
           </a>
@@ -210,20 +177,6 @@ export default function Home() {
             />
           </div>
         </section>
-      </div>
-
-      {/* Dock */}
-      <div className="fixed bottom-2 left-1/2 max-w-full -translate-x-1/2">
-        <Dock className="items-end pb-3 bg-[#D9D9D9] border border-[#BABABA]">
-          {data.map((item, idx) => (
-            <Link href={item.href} key={idx}>
-              <DockItem className="aspect-square rounded-full bg-[#d1d1d1] border border-[#BABABA]">
-                <DockLabel>{item.title}</DockLabel>
-                <DockIcon>{item.icon}</DockIcon>
-              </DockItem>
-            </Link>
-          ))}
-        </Dock>
       </div>
     </div>
   );
